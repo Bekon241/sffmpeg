@@ -20,7 +20,10 @@ Just type the following commands at the shell prompt:
 
     $ git clone https://github.com/pyke369/sffmpeg
     $ cd sffmpeg
-    $ make
+    $ sudo dnf cmake automake autoconf
+    $ make -j12 
+
+-- '-j12' (Your number of cpu cores) for fast compilation. Tested work on Fedora 40 (Nobara 40)
 
 Then go grab a coffee (or maybe ten). The helper will compile all FFmpeg dependencies for you. Once done, you should get an
 FFmpeg binary in the `build/bin` directory (with all dependencies statically linked-in).
