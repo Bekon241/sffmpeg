@@ -20,7 +20,7 @@ Just type the following commands at the shell prompt:
 
     $ git clone https://github.com/pyke369/sffmpeg
     $ cd sffmpeg
-    $ sudo dnf cmake automake autoconf
+    $ sudo dnf install cmake automake autoconf
     $ make -j12 
 
 -- '-j12' (Your number of cpu cores) for fast compilation. Tested work on Fedora 40 (Nobara 40)
